@@ -1,14 +1,15 @@
-import React from 'react';
-import link, { Link } from 'react-router-dom'
-import CartWidget from '../NavBar/CartWidget'
+import React from "react";
+import link, { Link } from "react-router-dom";
+import CartWidget from "../NavBar/CartWidget";
+import logo from "../Assets/img/img-logo.png";
 
 const NavBar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <Link className="navbar-brand" to='/' >
-          <img src='../assets/img/img-logo.png' width='90' alt='logo' />   Harmony's Music Store 
+          <Link className="navbar-brand" to="/">
+            <img src={logo} width="50" alt="logo" /> Harmony's Music Store
           </Link>
           <button
             className="navbar-toggler"
@@ -35,10 +36,9 @@ const NavBar = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/">
-                  <CartWidget/>
+                  <CartWidget />
                 </Link>
               </li>
-             
             </ul>
             <form className="d-flex" role="search">
               <input
