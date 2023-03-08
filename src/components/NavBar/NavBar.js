@@ -8,7 +8,7 @@ const NavBar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to='/' >
-          <img src='./762-7624474_guitarra-png.png' width='90' />   Harmony's Music Store 
+          <img src='../assets/img/img-logo.png' width='90' alt='logo' />   Harmony's Music Store 
           </Link>
           <button
             className="navbar-toggler"
