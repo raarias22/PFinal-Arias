@@ -1,16 +1,12 @@
 import React from "react";
-import Title from '../Title/Title'
+import "./NavBar.css"
 
-
-export const ItemListContainer = ({ texto }) => {
-    return (
+export const ItemListContainer = 
+({greeting})=> {
+    return(
         <>
-
-            <Title greeting= {texto}/>
-
+        <p>{greeting}</p>
         </>
-
-
     )
 }
 

@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
-        <ItemListContainer/>
+        <ItemListContainer greeting= "No disponible por el momento"/>
       </Router>
     </div>
     </>
