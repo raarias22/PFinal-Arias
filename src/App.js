@@ -1,19 +1,29 @@
-import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import NavBar from "../src/components/NavBar/NavBar";
+
+import React from "react";
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/NavBar/ItemListContainer";
+import ItemDetailContainer from "./components/NavBar/ItemDetailContainer";
+import Error404 from "./components/Error404";
+
 
 
 function App() {
   return (
-    <>
-    <div className="App">
-      <Router>
-        <NavBar />
-        <ItemListContainer greeting= "No disponible por el momento"/>
-      </Router>
-    </div>
-    </>
+        <div >      
+          <BrowserRouter >
+            <NavBar />
+            <Routes>
+              <Route path={"/"} element={<ItemListContainer />} />
+              <Route path={"/category/:id"} element={<ItemListContainer />} />
+              <Route path={"/item/id"} element={<ItemDetailContainer />} />
+              <Route path={"*"} element={<Error404 />} />
+            </Routes>           
+          </BrowserRouter>
+          
+
+
+        </div>
   );
 }
 

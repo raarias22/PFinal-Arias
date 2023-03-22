@@ -5,7 +5,7 @@ export const CartWidget = () => {
         <div>
 
             <i className="bi bi-cart4"></i>
-            <span className='notification'>1</span>
+            <span className='notification'>0</span>
 
         </div>
 

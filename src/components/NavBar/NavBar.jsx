@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import CartWidget from "../NavBar/CartWidget";
 import logo from "../Assets/img/img-logo.png";
 
@@ -25,32 +25,23 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" to="/">
-                  Tienda
-                </Link>
-              </li>
+              <NavLink className="nav-link" aria-current="page" to={"/category/Guitarras"} >Guitarras</NavLink>
+                                        </li>
+                                        <li className="nav-item">
+                                        <NavLink className="nav-link" to={"/category/Bajos"}>Bajos</NavLink>
+                                        </li>
+                                        <li className="nav-item">
+                                        <NavLink className="nav-link" to={"/category/Armonicas"}>Armonicas</NavLink>
+                                        </li>
+                                        <li className="nav-item">
+                                        <NavLink className="nav-link" to={"/category/Baterias"}>Baterias</NavLink>
+                                        </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/">
-                  Contacto
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <NavLink className="nav-link" to="/">
                   <CartWidget />
-                </Link>
+                </NavLink>
               </li>
             </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Buscador"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Buscador
-              </button>
-            </form>
           </div>
         </div>
       </nav>
