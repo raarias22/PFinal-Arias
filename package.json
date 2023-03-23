@@ -2,7 +2,7 @@
   "name": "jsx-example",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://raarias22.github.io/PreEntrega1Arias/",
+  "homepage": "https://raarias22.github.io/PreEntrega2Arias/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
