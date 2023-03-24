@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/PreEntrega2Arias/static/css/main.64d95d62.css",
-    "main.js": "/PreEntrega2Arias/static/js/main.4247813f.js",
-    "static/media/img-logo.png": "/PreEntrega2Arias/static/media/img-logo.e79814ebf72efe66716b.png",
+    "main.css": "/PreEntrega2Arias/static/css/main.525227a8.css",
+    "main.js": "/PreEntrega2Arias/static/js/main.eb17c33d.js",
     "index.html": "/PreEntrega2Arias/index.html",
-    "main.64d95d62.css.map": "/PreEntrega2Arias/static/css/main.64d95d62.css.map",
-    "main.4247813f.js.map": "/PreEntrega2Arias/static/js/main.4247813f.js.map"
+    "main.525227a8.css.map": "/PreEntrega2Arias/static/css/main.525227a8.css.map",
+    "main.eb17c33d.js.map": "/PreEntrega2Arias/static/js/main.eb17c33d.js.map"
   },
   "entrypoints": [
-    "static/css/main.64d95d62.css",
-    "static/js/main.4247813f.js"
+    "static/css/main.525227a8.css",
+    "static/js/main.eb17c33d.js"
   ]
 }
