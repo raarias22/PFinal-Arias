@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/NavBar/ItemListContainer";
 import ItemDetailContainer from "./components/NavBar/ItemDetailContainer";
 import Error404 from "./components/Error404";
+import './App.css';;
 
 
 
