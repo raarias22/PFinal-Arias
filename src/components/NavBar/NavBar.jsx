@@ -2,10 +2,11 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import CartWidget from "../NavBar/CartWidget";
 import logo from "../Assets/img/logo4.png";
+import './NavBar.css'
 
 const NavBar = () => {
   return (
-    <header>
+    <header ClassName="header">
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-black">
           <div className="container-fluid">
