@@ -6,7 +6,7 @@ import './NavBar.css'
 
 const NavBar = () => {
   return (
-    <header ClassName="header">
+    <header className="header">
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-black">
           <div className="container-fluid">
