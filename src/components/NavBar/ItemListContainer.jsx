@@ -1,4 +1,6 @@
 import React from "react";
+import {db} from '../Firebase'
+import { collection, getDocs } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import arrayProductos from "../json/arrayProductos.json"
