@@ -1,26 +1,34 @@
-import React from "react";
-import ItemCount from "../components/ItemCount";
-
+import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
+import { useCarritoContext } from "./context/CartContext";
 
 const ItemDetail = ({item}) => {
-    return (
+    
+    const {addItem} = useCarritoContext()
+    
+    const onAdd = (contador) => {
+        addItem(item, contador)
+    }   
 
-            <div className="row" id="itemdetail">
-                <div className="col-md-4 offset-md-4">
-                    <img src={item.imagen} className="img-fluid" alt={item.nombre} />
-                    <h1>{item.nombre}</h1>
-                    <p>{item.descripcion}</p>
-                    <p>${item.precio} </p>
-                    
-                </div>
-                <div>
-                <ItemCount stockItems={10} />
+    return (
+        <div className="row g-0 cardBody">
+            <div className="col-md-4 imgBody">
+                <img src={`../img/${item.img}`} alt="" className="img-fluid rounded-start"/>
+            </div>
+            <div className="col-md-8" >
+                <div className="card-body">
+                    <h5 className="card-title">{item.nombre}</h5>
+                    <p className="card-text">{item.descripcion} </p>
+                    <p className="card-text">Precio: $ {new Intl.NumberFormat('de-DE').format(item.precio)} </p>
+                    <p className="card-text">Stock: {item.stock} </p>
+                    <ItemCount inicial = {1} stock= {item.stock} onAdd={onAdd}/><br/>
+                    <button className= "btn btn-primary"><Link to="/cart" className="nav-link">Finalizar compra</Link></button>
                 </div>
                 
-            </div>    
-    )
-
+            </div>
+            
+        </div>
+    );
 }
-
 
 export default ItemDetail;
